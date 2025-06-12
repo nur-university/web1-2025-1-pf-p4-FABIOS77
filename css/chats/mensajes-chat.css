@@ -1,0 +1,125 @@
+#seccion-chat {
+    flex: 2;
+    min-width: 350px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid #FFD60A;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #seccion-chat h2 {
+    color: #FFD60A;
+    margin-bottom: 1rem;
+  }
+  
+  #info-publicacion-chat {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .img-publicacion-chat {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .titulo-publicacion-chat {
+    color: #f9fafb;
+    font-weight: 500;
+  }
+  
+  #info-usuario-chat {
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #FFD60A;
+    border-radius: 4px;
+  }
+  
+  .nombre-usuario-chat {
+    color: #FFD60A;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+
+  #mensajes-chat {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+  }
+  
+  .mensaje {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.6rem;
+    max-width: 80%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .mensaje-otro {
+    align-self: flex-start;
+    background-color: #0f172a;
+    border: 1px solid #FFD60A;
+  }
+  
+  .mensaje-propio {
+    align-self: flex-end;
+    background-color: #FFD60A;
+    color: #0f172a;
+    flex-direction: row-reverse;
+  }
+  
+  .mensaje img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .texto-mensaje {
+    margin: 0;
+  }
+
+  #formulario-mensaje {
+    display: flex;
+    margin-top: 1rem;
+    border: 1px solid #FFD60A;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  #input-mensaje {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    color: #0f172a;
+  }
+  
+  #btn-enviar {
+    background-color: #FFD60A;
+    color: #0f172a;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  #btn-enviar:hover {
+    background-color: #facc15;
+  }
+  

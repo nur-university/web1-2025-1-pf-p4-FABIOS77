@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensajes - Ventas</title>
+  <link rel="stylesheet" href="../css/base/base.css">
+  <link rel="stylesheet" href="../css/chats/header-chat.css">
+  <link rel="stylesheet" href="../css/chats/layout-chat.css">
+  <link rel="stylesheet" href="../css/chats/mensajes-chat.css">
+  <link rel="stylesheet" href="../css/chats/scrollbars-chat.css">
+</head>
+<body>
+
+  <header>
+    <button id="btn-volver" aria-label="Volver atrás">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M15 19l-7-7 7-7" />
+        </svg>
+    </button>
+    <h1>Arvenda</h1>
+    <nav aria-label="Menú de tipo de chat">
+      <div id="menu-tipo-chat">
+        <button id="btn-ventas" class="btn-chats">Ventas</button>
+        <button id="btn-compras" class="btn-chats">Compras</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="panel-chat">
+
+   
+    <section id="seccion-publicaciones" aria-label="Publicaciones con mensajes">
+      <h2>Publicaciones</h2>
+      <ul id="lista-publicaciones">
+       
+        
+        
+      </ul>
+    </section>
+
+    
+    <section id="seccion-conversaciones" aria-label="Conversaciones de la publicación seleccionada" hidden>
+      <h2>Conversaciones</h2>
+      <ul id="lista-conversaciones">
+        
+        <li class="item-conversacion" data-id-usuario="u123">
+          <img src="#" alt="Imagen usuario" class="img-usuario">
+          <div class="info-usuario">
+            <p class="nombre-usuario">Nombre del usuario</p>
+            <p class="ultimo-mensaje">Último mensaje...</p>
+          </div>
+          <span class="fecha-mensaje">12/06/2025</span>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="seccion-chat" aria-label="Chat con el usuario seleccionado" hidden>
+      <h2>Conversación</h2>
+
+      <div id="info-publicacion-chat">
+        <img src="ruta/publicacion.jpg" alt="Imagen del producto" class="img-publicacion-chat">
+        <p class="titulo-publicacion-chat">Título del producto</p>
+      </div>
+      <div id="info-usuario-chat">
+        <p class="nombre-usuario-chat">Nombre del usuario</p>
+      </div>
+      <div id="mensajes-chat">
+        
+        <div class="mensaje mensaje-otro">
+          <img src="ruta/usuario.jpg" alt="Imagen usuario">
+          <p class="texto-mensaje">Hola, ¿sigue disponible?</p>
+        </div>
+        <div class="mensaje mensaje-propio">
+          <p class="texto-mensaje">Sí, ¿te sigue interesando?</p>
+          <img src="ruta/vendedor.jpg" alt="Imagen vendedor">
+        </div>
+      </div>
+
+      <form id="formulario-mensaje" aria-label="Enviar nuevo mensaje">
+        <input type="text" id="input-mensaje" placeholder="Escribe tu mensaje..." required>
+        <button type="submit" id="btn-enviar">➤</button>
+      </form>
+    </section>
+
+  </main>
+
+
+  <script src="../js/chats/chat.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arvenda - Página Principal</title>
+  
+  <link rel="stylesheet" href="css/base/base.css" />
+  <link rel="stylesheet" href="css/publications.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Arvenda</h1>
+    <nav id="menu-superior">
+      <a href="html/registro.html" id="btn-registrarse">Registrarse</a>
+      <a href="html/login.html" id="btn-login">Iniciar sesión</a>
+    </nav>
+  </header>
+
+  <main class="principal">
+    <section class="bienvenida">
+      <h2>Bienvenido a Arvenda</h2>
+      <p>Tu plataforma para comprar y vender productos de forma directa, sencilla y segura.</p>
+      <a href="html/dashboard.html" class="menu-icon">🛒 Ver todos los anuncios</a>
+    </section>
+
+    <section class="ventajas">
+      <h2>¿Por qué elegir Arvenda?</h2>
+      <ul>
+        <li>✔ Publicaciones gratuitas e ilimitadas</li>
+        <li>✔ Contacto directo con el vendedor</li>
+        <li>✔ Navegación fácil por categorías</li>
+        <li>✔ Diseño intuitivo y rápido</li>
+      </ul>
+    </section>
+    
+    <section class="destacados">
+      <h2>Anuncios destacados</h2>
+      <div class="destacados-grid">
+        <div class="card">
+          <img src="images/images.png" alt="PS5">
+          <p>🎮 PS5 Pro – Bs. 6000</p>
+        </div>
+        <div class="card">
+          <img src="images/image19.png" alt="Silla">
+          <p>🪑 Silla Ergonómica – Bs. 350</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="categorias">
+      <h2>Categorías destacadas</h2>
+      <div class="categorias-grid">
+        <button class="btn-primario">📱 Electrónica</button>
+        <button class="btn-primario">🚗 Vehículos</button>
+        <button class="btn-primario">🏠 Hogar</button>
+        <button class="btn-primario">🎮 Videojuegos</button>
+        <button class="btn-primario">👕 Ropa</button>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2>Preguntas Frecuentes</h2>
+      <div class="pregunta">
+        <button class="btn-primario toggle-btn">¿Cómo puedo publicar un anuncio?</button>
+         <p class="respuesta oculto">Debes registrarte, iniciar sesión y acceder a la sección de administración para publicar.</p>
+      </div>
+      <div class="pregunta">
+        <button class="btn-primario toggle-btn">¿Necesito pagar para usar Arvenda?</button>
+        <p class="respuesta oculto">No, el uso de Arvenda es totalmente gratuito.</p>
+      </div>
+      <div class="pregunta">
+        <button class="btn-primario toggle-btn">¿Cómo contacto con un vendedor?</button>
+        <p class="respuesta oculto">En cada anuncio hay un botón para enviar mensaje. Debes iniciar sesión para usarlo.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Arvenda. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach(boton => {
+      boton.addEventListener('click', () => {
+        const respuesta = boton.nextElementSibling;
+        if (respuesta.style.display === 'block') {
+          respuesta.style.display = 'none';
+        } else {
+          respuesta.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.btn-chats {
+    background-color: #facc15;
+    color: #0f172a;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-chats:hover {
+    background-color: #fde047;
+    color: #0a1a3a;
+  }
+  
+  .btn-chats.activa {
+    background-color: #FFD60A;
+    border: 2px solid #fff;
+    color: #0a1a3a;
+  }
+  
+  #btn-volver {
+    background-color: transparent;
+    border: 2px solid #FFD60A;
+    color: #FFD60A;
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #btn-volver svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #btn-volver:hover {
+    background-color: #FFD60A;
+    color: #0f172a;
+  }
+  
+  @media (max-width: 1024px) {
+    header {
+      position: relative;
+    }
+  
+    #btn-volver {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+  }
+  

@@ -1,0 +1,219 @@
+
+  
+  main.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  .bienvenida {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  .bienvenida h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .categorias {
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+  }
+  
+  .categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .menu-icon {
+    background-color: #ddd;
+    color: #111;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  .menu-icon:hover {
+    background-color: #bbb;
+  }
+  
+  .faq {
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  .btn-primario {
+    background-color: #facc15;
+    color: #0f172a;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  
+  .btn-primario:hover {
+    background-color: #fde047;
+    color: #0a1a3a;
+  }
+  
+
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .faq .pregunta {
+    margin-bottom: 1rem;
+  }
+  
+  .faq .respuesta {
+    display: none;
+    background-color: #ffffff;
+    color: #222;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-left: 5px solid #888;
+    border-radius: 4px;
+  }
+  
+  footer {
+    background: linear-gradient(to right, #1e3a8a, #334155);
+    color: #f1f5f9;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+  
+  
+  .oculto {
+    display: none;
+  }
+  
+  .faq {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  .faq h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .faq .pregunta {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 1%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  }
+  
+  .faq .pregunta button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq .respuesta {
+    display: none;
+    padding: 0.8rem;
+    background-color: #fff;
+    color: #111;
+    border-left: 4px solid #ccc;
+    border-radius: 6px;
+    text-align: left;
+  }
+  .faq .respuesta {
+    display: none;
+    padding: 1rem;
+    background: linear-gradient(to bottom right, #1e3a8a, #334155);
+    color: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .faq .pregunta {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 1%;
+    background-color: rgba(30, 58, 138, 0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .ventajas {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    color: #f9fafb;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .ventajas ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ventajas li {
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+  
+  .destacados {
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .destacados-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 6px;
+  }
+  

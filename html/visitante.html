@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arvenda - Marketplace</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base/base.css">
+  <link rel="stylesheet" href="../css/publications.css">
+  <link rel="stylesheet" href="../css/base/sidebar.css">
+</head>
+<body>
+
+  <header>
+    <h1>Arvenda</h1>
+    <form id="form-busqueda">
+      <input type="text" name="query" id="input-busqueda" placeholder="Buscar...">
+      <button type="submit">🔍 Búsqueda</button>
+    </form>
+    <nav id="menu-superior">
+      <a href="../index.html">Inicio</a>
+      <a href="registro.html" id="btn-registrarse">Registrarse</a>
+      <a href="login.html" id="btn-login">Iniciar sesión</a>
+    </nav>
+  </header>
+
+  
+
+  <main>
+    <aside id="menu-lateral">
+      <button id="toggle-categorias" class="menu-icon">📂 Categorías</button>
+
+      <section id="categorias" class="seccion-menu">
+        <h2>Categorías</h2>
+        <ul id="lista-categorias">
+          <template id="tpl-categoria">
+            <li><button></button></li>
+          </template>
+
+          <li><button data-categoria="Electrónica">Electrónica</button></li>
+          <li><button data-categoria="Ropa y accesorios">Ropa y accesorios</button></li>
+          <li><button data-categoria="Hogar y muebles">Hogar y muebles</button></li>
+          <li><button data-categoria="Electrodomésticos">Electrodomésticos</button></li>
+          <li><button data-categoria="Celulares y tablets">Celulares y tablets</button></li>
+          <li><button data-categoria="Computación">Computación</button></li>
+          <li><button data-categoria="Videojuegos">Videojuegos</button></li>
+          <li><button data-categoria="Deportes y fitness">Deportes y fitness</button></li>
+          <li><button data-categoria="Belleza y cuidado personal">Belleza y cuidado personal</button></li>
+          <li><button data-categoria="Automóviles y motos">Automóviles y motos</button></li>
+          <li><button data-categoria="Accesorios para vehículos">Accesorios para vehículos</button></li>
+          <li><button data-categoria="Libros, música y películas">Libros, música y películas</button></li>
+          <li><button data-categoria="Juguetes y juegos">Juguetes y juegos</button></li>
+          <li><button data-categoria="Mascotas">Mascotas</button></li>
+          <li><button data-categoria="Herramientas y construcción">Herramientas y construcción</button></li>
+          <li><button data-categoria="Jardín y exteriores">Jardín y exteriores</button></li>
+          <li><button data-categoria="Arte y manualidades">Arte y manualidades</button></li>
+          <li><button data-categoria="Instrumentos musicales">Instrumentos musicales</button></li>
+          <li><button data-categoria="Servicios">Servicios</button></li>
+          <li><button data-categoria="Inmuebles">Inmuebles</button></li>
+          <li><button data-categoria="Antigüedades y coleccionables">Antigüedades y coleccionables</button></li>
+          <li><button data-categoria="Industria y oficinas">Industria y oficinas</button></li>
+          <li><button data-categoria="Alimentos y bebidas">Alimentos y bebidas</button></li>
+          <li><button data-categoria="Salud">Salud</button></li>
+          <li><button data-categoria="Bebés y maternidad">Bebés y maternidad</button></li>
+          <li><button data-categoria="Moda infantil">Moda infantil</button></li>
+          <li><button data-categoria="Viajes y turismo">Viajes y turismo</button></li>
+          <li><button data-categoria="Papelería y oficina">Papelería y oficina</button></li>
+          <li><button data-categoria="Fotografía">Fotografía</button></li>
+          <li><button data-categoria="Relojes y joyería">Relojes y joyería</button></li>
+          <li><button data-categoria="Bicicletas">Bicicletas</button></li>
+          <li><button data-categoria="Cámaras de seguridad">Cámaras de seguridad</button></li>
+          <li><button data-categoria="Drones y robótica">Drones y robótica</button></li>
+          <li><button data-categoria="Tecnología educativa">Tecnología educativa</button></li>
+          <li><button data-categoria="Software y licencias">Software y licencias</button></li>
+        </ul>
+      </section>
+    </aside>
+
+    <section id="anuncios">
+
+      <section class="descripcion">
+        <p>
+          Arvenda es tu espacio para comprar y vender productos de forma directa, sencilla y segura.
+          Publica tus anuncios, encuentra lo que necesitas y comunícate sin intermediarios.
+          Explora nuestras categorías destacadas y descubre grandes oportunidades cerca de ti.
+        </p>
+      </section>
+
+      <h2>Destacado</h2>
+      <h3>Anuncios recientes</h3>
+
+      <div id="contenedor-anuncios">
+          
+            
+        <div class="anuncio" id="ps5-card">
+          <img class="anuncio-img" src="../images/images.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 6.000</p>
+            <p class="anuncio-titulo">PS5 Pro + Mando</p>
+            <p class="anuncio-ubicacion">Santa Cruz de la Sierra</p>
+          </div>
+        </div>
+        
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image2.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 5.500</p>
+            <p class="anuncio-titulo">iPhone 13 nuevo</p>
+            <p class="anuncio-ubicacion">Cochabamba</p>
+          </div>
+        </div>
+      
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image3.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 4.200</p>
+            <p class="anuncio-titulo">Laptop Asus Ryzen 7</p>
+            <p class="anuncio-ubicacion">La Paz</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image4.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 280</p>
+            <p class="anuncio-titulo">Zapatillas Nike Air</p>
+            <p class="anuncio-ubicacion">Santa Cruz</p>
+          </div>
+        </div>
+      
+      
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image5.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 1.800</p>
+            <p class="anuncio-titulo">Sofá moderno 3 cuerpos</p>
+            <p class="anuncio-ubicacion">Sucre</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image6.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 3.900</p>
+            <p class="anuncio-titulo">Heladera Samsung</p>
+            <p class="anuncio-ubicacion">Oruro</p>
+          </div>
+        </div>
+      
+     
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image7.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 2.400</p>
+            <p class="anuncio-titulo">Cámara Canon EOS</p>
+            <p class="anuncio-ubicacion">Potosí</p>
+          </div>
+        </div>
+      
+    
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image20.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 1.200</p>
+            <p class="anuncio-titulo">Bicicleta de montaña</p>
+            <p class="anuncio-ubicacion">Tarija</p>
+          </div>
+        </div>
+      
+      
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image8.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 150</p>
+            <p class="anuncio-titulo">Lote de libros clásicos</p>
+            <p class="anuncio-ubicacion">Trinidad</p>
+          </div>
+        </div>
+      
+       
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image9.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 180</p>
+            <p class="anuncio-titulo">Reloj Casio clásico</p>
+            <p class="anuncio-ubicacion">Cobija</p>
+          </div>
+        </div>
+      
+      
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image10.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 950</p>
+            <p class="anuncio-titulo">Mesa comedor 6 sillas</p>
+            <p class="anuncio-ubicacion">La Paz</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image11.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 220</p>
+            <p class="anuncio-titulo">Audífonos inalámbricos</p>
+            <p class="anuncio-ubicacion">Santa Cruz</p>
+          </div>
+        </div>
+      
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image12.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 850</p>
+            <p class="anuncio-titulo">Monitor HP 24 pulgadas</p>
+            <p class="anuncio-ubicacion">Cochabamba</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image13.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 130</p>
+            <p class="anuncio-titulo">Juego de mesa Monopoly</p>
+            <p class="anuncio-ubicacion">Oruro</p>
+          </div>
+        </div>
+      
+       
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image14.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 5.800</p>
+            <p class="anuncio-titulo">Moto Scooter Eléctrica</p>
+            <p class="anuncio-ubicacion">Santa Cruz</p>
+          </div>
+        </div>
+      
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image15.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 300</p>
+            <p class="anuncio-titulo">Parlante Bluetooth</p>
+            <p class="anuncio-ubicacion">Tarija</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image16.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 700</p>
+            <p class="anuncio-titulo">Guitarra acústica</p>
+            <p class="anuncio-ubicacion">Sucre</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image17.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 100</p>
+            <p class="anuncio-titulo">Kit papelería escolar</p>
+            <p class="anuncio-ubicacion">Potosí</p>
+          </div>
+        </div>
+      
+       
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image18.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 3.500</p>
+            <p class="anuncio-titulo">Lavadora LG Turbo</p>
+            <p class="anuncio-ubicacion">Trinidad</p>
+          </div>
+        </div>
+      
+        
+        <div class="anuncio">
+          <img class="anuncio-img" src="../images/image19.png" alt="Imagen del producto">
+          <div class="anuncio-info">
+            <p class="anuncio-precio">Bs. 1.200</p>
+            <p class="anuncio-titulo">Silla Gamer Redragon</p>
+            <p class="anuncio-ubicacion">Cobija</p>
+          </div>
+        </div>
+
+</div>
+    </section>
+  </main>
+
+  <script src="../js/btn_movil.js"></script>
+</body>
+</html>

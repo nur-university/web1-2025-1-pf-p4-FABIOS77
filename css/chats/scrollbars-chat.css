@@ -1,0 +1,19 @@
+#seccion-publicaciones::-webkit-scrollbar,
+#seccion-conversaciones::-webkit-scrollbar,
+#mensajes-chat::-webkit-scrollbar {
+  width: 8px;
+}
+
+#seccion-publicaciones::-webkit-scrollbar-thumb,
+#seccion-conversaciones::-webkit-scrollbar-thumb,
+#mensajes-chat::-webkit-scrollbar-thumb {
+  background-color: #FFD60A;
+  border-radius: 4px;
+}
+
+#seccion-publicaciones::-webkit-scrollbar-track,
+#seccion-conversaciones::-webkit-scrollbar-track,
+#mensajes-chat::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/login-register.css" />
+</head>
+<body>
+    
+  <div class="wrapper">
+    <form id="form-registro">
+      <h1>Registro</h1>
+
+      <div class="input-box">
+        <input type="text" id="nombre" placeholder="Nombre completo" />
+        <i class="bx bxs-user"></i>
+        <span class="error-msg" id="error-nombre"></span>
+      </div>
+
+      <div class="input-box">
+        <input type="text" id="correo" placeholder="Correo electrónico" />
+        <i class="bx bxs-envelope"></i>
+        <span class="error-msg" id="error-correo"></span>
+      </div>
+
+      <div class="input-box">
+        <input type="password" id="contrasena" placeholder="Contraseña" />
+        <i class="bx bx-show toggle-password" onclick="togglePassword()"></i>
+        <span class="error-msg" id="error-contrasena"></span>
+      </div>
+
+      <button type="submit" class="btn">Crear cuenta</button>
+
+      <div id="mensaje-exito" style="color: green; display: none; margin-top: 10px;"></div>
+
+      <div class="register-link">
+        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const pass = document.getElementById("contrasena");
+      const icon = document.querySelector(".toggle-password");
+
+      if (pass.type === "password") {
+        pass.type = "text";
+        icon.classList.remove("bx-show");
+        icon.classList.add("bx-hide");
+      } else {
+        pass.type = "password";
+        icon.classList.remove("bx-hide");
+        icon.classList.add("bx-show");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalle de Publicación - Arvenda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/detalle_publication.css">
+  <link rel="stylesheet" href="../css/base/base.css">
+</head>
+<body>
+
+  <header>
+    <h1>Arvenda</h1>
+    <nav id="menu-superior">
+      <a href="../index.html">Inicio</a>
+      <a href="dashboard.html">Anuncios</a>
+      <a href="#" id="btn-ayuda">Ayuda</a>
+    </nav>
+  </header>
+
+  <main id="main-detalle" style="display: flex; flex-wrap: wrap; gap: 2rem; padding: 2rem;">
+
+    <section id="carrusel">
+      <div id="contenedor-imagen">
+        <button id="btn-prev">⬅︎</button>
+        <img id="imagen-principal" src="#" alt="Imagen principal de la publicación">
+        <button id="btn-next">➡︎ </button>
+      </div>
+    </section>
+
+
+    <aside id="info-publicacion">
+      <div id="titulo-precio">
+        <h2 id="nombre-producto">Producto</h2>
+        <p id="precio-producto">Precio</p>
+      </div>
+
+      <div id="descripcion-producto">
+        <h3>Descripción</h3>
+        <p id="texto-descripcion">...</p>
+      </div>
+
+      <div id="estado-producto">
+        <h3>Estado</h3>
+        <p id="texto-estado">...</p>
+      </div>
+
+      <div id="ubicacion-producto">
+        <h3>Ubicación</h3>
+        <p id="texto-ubicacion">...</p>
+      </div>
+
+      <div id="acciones-usuario">
+        <button id="btn-guardar">Guardar anuncio</button>
+        <button id="btn-enviar-mensaje">Enviar mensaje</button>
+      </div>
+    </aside>
+  </main>
+  <section id="info-anunciante">
+    <div id="anunciante-container">
+      <img id="foto-anunciante" src="#" alt="Foto del anunciante" width="50" height="50">
+      <div>
+        <p id="nombre-anunciante">Anunciante</p>
+        <button id="btn-detalles-vendedor">Detalles del vendedor</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/detalles_publicacionn.js"></script>
+</body>
+</html>
